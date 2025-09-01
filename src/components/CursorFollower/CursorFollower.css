@@ -1,0 +1,13 @@
+.cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none; /* so it doesn’t block clicks */
+  transition: transform 0.1s ease; /* smooth follow */
+  z-index: 9999;
+}

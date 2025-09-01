@@ -1,0 +1,49 @@
+#about {
+  background-color: #BDDDFC;
+  padding: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* space between text and image */
+  height: 100vh;
+}
+
+.about-text {
+  flex: 1; /* takes available space */
+  min-width: 280px; /* prevents text from shrinking too much */
+}
+
+.about-text h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-text p {
+  /* line-height: 1.6; */
+  font-size: 1.4rem;
+}
+
+.profilePic {
+  flex: 0 0 auto; /* keeps image size fixed */
+  height: auto;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  display: block;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .profilePic {
+    max-width: 250px;
+  }
+}
