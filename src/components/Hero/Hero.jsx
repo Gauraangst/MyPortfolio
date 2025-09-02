@@ -11,9 +11,6 @@
                     <br />
                     <button>Explore My Work </button>
 
-                    
-
-
             </div>
             <div className='aside'>
                 <img src={funnyGif1} alt="" className='funnyGif1' />

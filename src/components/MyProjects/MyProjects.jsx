@@ -1,6 +1,7 @@
 import seniorCitizenImg from '../../assets/senior_citizens.webp';
 import '../../style.css'
 import aquaponicImg from '../../assets/project2.png';
+import TeamWriterImg from '../../assets/TeamWriter.jpg'
 
 const Projects = () => {
   const projectData = [
@@ -17,6 +18,12 @@ const Projects = () => {
       description: "Smart farming app for aquaponics, integrating AI, IoT sensors, and real-time monitoring to improve yield and sustainability.",
       tech: "React Native, Firebase, IoT, AI",
       link: "#"
+    },
+    {
+      img: TeamWriterImg,
+      title: "TeamWriter- Collaborative Docs",
+      description: "TeamWriter is a a collaborative text editor enabling multiple users to create, edit, and share documents in real time. It provides a minimal yet powerful interface for writing with rich-text formatting, auto-saving, and seamless collaboration.",
+      link: "https://github.com/Gauraangst/TeamWriter"
     }
   ];
 
