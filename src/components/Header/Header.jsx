@@ -1,13 +1,8 @@
-import { useState } from 'react';
 import '../../style.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Header = () => {
 
-    const [likes, setLikes] = useState(0);
-    function handleLikes(){
-        setLikes(likes + 1);
-    }
     const handleGitHubClick = () =>{
         window.open("https://github.com/Gauraangst", "_blank");
     }
@@ -28,9 +23,6 @@ const Header = () => {
             <button onClick={() =>{scrollToSection("about")}}>About</button>
             <button onClick={() =>{scrollToSection("projects-section")}}>Projects</button>
             <button onClick={handleOpenPDF}>Resume</button>
-            <button onClick={handleLikes}>  
-                {likes}
-            </button>
             </div>
 
             <div className='links headerButtons'>

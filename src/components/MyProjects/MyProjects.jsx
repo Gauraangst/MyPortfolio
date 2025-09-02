@@ -17,20 +17,6 @@ const Projects = () => {
       description: "Smart farming app for aquaponics, integrating AI, IoT sensors, and real-time monitoring to improve yield and sustainability.",
       tech: "React Native, Firebase, IoT, AI",
       link: "#"
-    },
-    {
-      img: seniorCitizenImg,
-      title: "SilverSkills – Incentive-Based Senior Citizen Workplace",
-      description: "A platform connecting skilled senior citizens with flexible work opportunities, rewarding contributions through an incentive-based model.",
-      tech: "React, Node.js, Express, MongoDB",
-      link: "#"
-    },
-    {
-      img: aquaponicImg,
-      title: "AgroAqua – Smart Aquaponic Farming App",
-      description: "Smart farming app for aquaponics, integrating AI, IoT sensors, and real-time monitoring to improve yield and sustainability.",
-      tech: "React Native, Firebase, IoT, AI",
-      link: "#"
     }
   ];
 

@@ -3,6 +3,10 @@ import { useEffect } from 'react';
 import LandingPage from './layouts/LandingPage'
 import AOS from "aos"
 import "aos/dist/aos.css";
+import CursorFollower from "./components/CursorFollower/CursorFollower";
+import Education from './components/Education/Education';
+import Experience from './components/MyProjects/Experience';
+import ContactSection from './components/ContactSection/ContactSection';
 
 function App() {
   useEffect(() => {
@@ -10,7 +14,11 @@ function App() {
   }, []);
   return (
     <div>
+      <CursorFollower/>
       <LandingPage />
+      <Education/>
+      <Experience/>
+      <ContactSection/>
       
     </div>
   )

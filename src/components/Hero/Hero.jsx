@@ -10,9 +10,12 @@
                     <HeroTyped />
                     <br />
                     <h2>Explore My Work </h2>
+                    <content>
+                        <h2>Check out my YouTube Channel</h2>
+                        <img src="/ytlogo.png" alt="yt" id='ytlogo' />
+                    </content>
 
-                    <h2>Check out my YouTube Channel</h2>
-                    {/* <img src="/ytlogo.png" alt="yt" /> */}
+                    
 
 
             </div>

@@ -1,31 +1,43 @@
-import React from 'react'
+import React from "react";
+import "../../style.css";
 
-function Experience() {
-    const expData = [
-        
-            { year: "2023", title: "Intern - Web Developer", desc: "Worked on front-end React apps." },
-            { year: "2024", title: "Freelancer", desc: "Built responsive websites for clients." },
-            { year: "2025", title: "Software Engineer", desc: "Working on full-stack applications." }
-    ]
+const experienceData = [
+  {
+    role: "Web Developer Intern",
+    company: "Tech Solutions Pvt Ltd",
+    period: "June 2025 - Present",
+    description: "Worked on developing responsive web applications using React.js, Tailwind CSS, and Node.js. Implemented interactive UI components and optimized performance."
+  },
+  {
+    role: "Frontend Developer Intern",
+    company: "Creative Labs",
+    period: "Jan 2025 - May 2025",
+    description: "Built reusable React components and integrated APIs. Improved website accessibility and enhanced user experience."
+  },
+  {
+    role: "Freelance Web Developer",
+    company: "Self-Employed",
+    period: "2024 - 2025",
+    description: "Designed and developed portfolio websites for clients using modern web technologies with responsive design."
+  }
+];
+
+const Experience = () => {
   return (
-    <section className='exp-section'>
-        <h2>Experience</h2>
-        <div className='exp-container'>
-            {expData.map((exp,i) =>(
-                <div className="exp-item"
-                     key={i}
-                     data-aos="fade-up"
-                     data-aos-delay={i * 150}>
-                    <div>
-
-                    </div>
-                </div>
-            ))}
-
-        </div>
-      
+    <section id="experience-section">
+      <h1>Experience</h1>
+      <div className="experience-container">
+        {experienceData.map((exp, index) => (
+          <div className="experience-card" key={index}>
+            <div className="experience-period">{exp.period}</div>
+            <h3>{exp.role}</h3>
+            <h4>{exp.company}</h4>
+            <p>{exp.description}</p>
+          </div>
+        ))}
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
