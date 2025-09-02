@@ -9,11 +9,7 @@
                 <h1>Hey, This is Gauraang Thakkar</h1>
                     <HeroTyped />
                     <br />
-                    <h2>Explore My Work </h2>
-                    <content>
-                        <h2>Check out my YouTube Channel</h2>
-                        <img src="/ytlogo.png" alt="yt" id='ytlogo' />
-                    </content>
+                    <button>Explore My Work </button>
 
                     
 

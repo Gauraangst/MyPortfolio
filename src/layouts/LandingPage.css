@@ -1,10 +1,33 @@
+/* ===================== LANDING PAGE LAYOUT ===================== */
 .landing-container {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100vh;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-purple) transparent;
+}
+
+.landing-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.landing-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.landing-container::-webkit-scrollbar-thumb {
+  background: var(--accent-purple);
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.landing-container::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
 }
 
 section {
   scroll-snap-align: start;
-  height: 100vh;
+  min-height: 100vh;
+  scroll-snap-stop: always;
 }
