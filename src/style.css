@@ -1,0 +1,261 @@
+/* About Section*/
+
+#about {
+  background-color: #BDDDFC;
+  padding: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* space between text and image */
+  height: 100vh;
+}
+
+.about-text {
+  flex: 1; /* takes available space */
+  min-width: 280px; /* prevents text from shrinking too much */
+}
+
+.about-text h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-text p {
+  /* line-height: 1.6; */
+  font-size: 1.4rem;
+}
+
+.profilePic {
+  flex: 0 0 auto; /* keeps image size fixed */
+  height: auto;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  display: block;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .profilePic {
+    max-width: 250px;
+  }
+}
+
+
+/* Cursor Follower */
+
+.cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none; /* so it doesn’t block clicks */
+  transition: transform 0.1s ease; /* smooth follow */
+  z-index: 9999;
+}
+
+
+/* Header */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container{
+    background-color: black ;
+    display: flex; 
+    justify-content: center;     
+    align-items: center;
+    padding: 15px;
+    color: white;
+    box-shadow: none;
+
+}
+.headerButtons{
+    padding: 5px 5px;
+    font-size: 1.2rem;
+
+}
+
+.logo{
+    padding:7px 5px;
+}
+
+.headerButtons button{
+    color: white;
+    font-size: 0.8em;
+    background: none;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    padding: 5px 10px;   
+}
+
+.headerButtons button:hover{
+    text-decoration: underline;
+    color: #BDDDFC;
+    text-shadow: 0 0 10px #BDDDFC;
+}
+
+.links{
+    position: absolute;
+    right: 0; /* Stick to right edge */
+    padding: 5px;
+}
+
+
+/* Hero */
+
+
+.parallax {
+    background-color: #384959;
+  
+  /* Full viewport height */
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 40px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.parallax h1{
+    font-size: 3rem;
+    padding: 10px 0px;
+}
+.parallax p{
+font-size: 1em;
+}
+
+.contents{
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2{
+  padding: 10px 10px;
+}
+
+.funnyGif1{
+  height: 300px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+}
+
+
+/* MyProjects */
+
+#projects-section {
+  padding: 50px;
+  background-color: #6A89A7;
+  text-align: center;
+}
+
+#projects-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: nowrap; /* ❌ no wrapping, forces horizontal layout */
+  justify-content: flex-start; /* align items to start for scrolling */
+  overflow-x: auto; /* enable horizontal scrolling */
+  scroll-behavior: smooth;
+  gap: 30px;
+  padding-bottom: 10px; /* so scrollbar doesn't overlap cards */
+}
+
+.projects-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.project-card {
+  flex: 0 0 auto; /* prevents shrinking and keeps cards side by side */
+  max-width: 350px;
+}
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 350px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-info h3 {
+  margin-bottom: 10px;
+}
+
+.tech-stack {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.view-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #BDDDFC;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #9cc9e6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+

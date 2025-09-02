@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import './Header.css'
+import '../../style.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import About from '../About/About';
 
 const Header = () => {
 

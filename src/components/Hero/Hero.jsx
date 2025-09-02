@@ -1,5 +1,5 @@
     import React from 'react'
-    import './Hero.css'
+    import "../../style.css"
     import HeroTyped from '../Typed/HeroTyped'
     import funnyGif1 from '../../assets/giphy.gif'
     const Hero = () => {

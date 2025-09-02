@@ -1,5 +1,5 @@
 import seniorCitizenImg from '../../assets/senior_citizens.webp';
-import './MyProjects.css'
+import '../../style.css'
 import aquaponicImg from '../../assets/project2.png';
 
 const Projects = () => {
