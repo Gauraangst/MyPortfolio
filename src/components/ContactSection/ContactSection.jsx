@@ -11,7 +11,6 @@ const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: handle form submission (email API / backend)
     console.log(formData);
     setSubmitted(true);
     setFormData({ name: "", email: "", message: "" });
@@ -38,7 +37,8 @@ const ContactSection = () => {
             onChange={handleChange}
             required
           />
-          <textarea
+          <textarea 
+            className="text-area"
             name="message"
             placeholder="Your Message"
             value={formData.message}
@@ -49,13 +49,6 @@ const ContactSection = () => {
           <button type="submit">Send Message</button>
           {submitted && <p className="success-msg">Message sent! I will get back to you soon.</p>}
         </form>
-
-        {/* <div className="contact-info">
-          <h2>Other Ways to Connect</h2>
-          <p>Email: <a href="mailto:gauraangsthakkar@gmail.com">gauraangsthakkar@gmail.com</a></p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/gauraangst" target="_blank">linkedin.com/in/gauraangst</a></p>
-          <p>GitHub: <a href="https://github.com/Gauraangst" target="_blank">github.com/Gauraangst</a></p>
-        </div> */}
       </div>
     </section>
   );

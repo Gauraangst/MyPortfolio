@@ -727,7 +727,7 @@ img, video {
   }
 }
 
-/* ===================== CONTACT SECTION ===================== */
+/* CONTACT SECTION  */
 #contact-section {
   padding: var(--section-padding) 20px;
   background: var(--white);
@@ -765,7 +765,7 @@ img, video {
 
 /* Form Styling */
 .contact-form {
-  background-color: var(--white);
+  background-color: #1e293b;
   padding: 30px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
@@ -779,6 +779,7 @@ img, video {
 
 .contact-form input,
 .contact-form textarea {
+  background-color: #000000;
   padding: 12px 15px;
   border-radius: var(--border-radius-sm);
   border: 1px solid var(--border-light);
@@ -871,7 +872,7 @@ img, video {
 }
 
 
-/* ===================== EXPERIENCE SECTION ===================== */
+/*  EXPERIENCE SECTION  */
 #experience-section {
   padding: var(--section-padding) 20px;
   background: var(--white);
